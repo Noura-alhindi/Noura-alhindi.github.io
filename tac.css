@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box
+}
+body{
+    background: #11998e;
+    background: linear-gradient(to left, rgb(4, 143, 207), #8e119993 );
+    /* background:-webkit-linear-gradient(to right, #38ef7d, #11998e); */
+}
+
+.container{
+    width: 300px;
+    margin: 50px auto;
+    overflow: auto;
+/* vertical-align: center; */
+display: block;
+box-align: center;
+
+}
+
+.box{
+    float: left;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    border: 1px solid whitesmoke;
+    font-family: fantasy;
+    padding: 12px;
+  
+
+}
+
+.clear{
+    clear: both;
+    vertical-align: center;
+}
+
+.box:hover{
+    background-color: plum;
+
+}
+h1{
+    font-size: 46px;
+    font-family:fantasy;
+    color: whitesmoke ;
+    text-align: center;
+}
+button{
+align-items: center;
+background-color: rgb(78, 78, 141);
+border: #11998e;
+font-size: 20px; 
+/* color: plum; */
+color: thistle;
+border-radius: 12px;
+/* position: absolute; */
+/* left: 560px; */
+/* bottom: 70px; */
+/* display: inline-block; */
+display: block;
+margin: 10px auto;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: fantasy;
+}
+a:link, a:visited {
+    background-color:rgb(78, 78, 141) ;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+    margin: 250px auto;
+   /* position: absolute;
+   right: 580px;
+   bottom: 250px; */
+   font-family: fantasy;
+   font-size: 22px;
+   width: 200px;
+  }
+.refresh {
+  /* position: absolute;
+  bottom: 240px;
+  right: 577px; */
+  display: block;
+  margin: 80px auto;
+}
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+}
