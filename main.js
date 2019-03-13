@@ -1,11 +1,10 @@
 $(document).ready(function(){
     let player1 = "X";
     let player2 = "O";
-    // {
-    //     $('#x').on('click',player1);
-    //     $('#o').on('click',player2);
-
-    // }
+    // $(".winner").text(player1 + "'s turn")
+    let player1Score =0 ;
+    let player2Score =0 ;
+    
     let currentTurn=1;
     let moves = 0 ;
     
@@ -17,19 +16,26 @@ $(document).ready(function(){
             event.target.innerHTML= player1;
             event.target.style.color ="black";
             currentTurn++;
+    $(".winner").text(player2 + "'s Turn")
+
             }
             else
             {   
             event.target.innerHTML= player2;
             event.target.style.color= "white";
             currentTurn--;
+    $(".winner").text(player1 + "'s Turn")
+
             }
                 if (checkWinner()){  
             let theWinner = currentTurn==1?player2:player1;
+                
             declareTheWinner(theWinner);
+    score(theWinner)
+
         }
     });
-
+    
     
     $(".refresh").on('click',function()
     {
@@ -38,7 +44,7 @@ $(document).ready(function(){
     m.innerHTML ="";
     })
     $(".winner").html("");
-    $(".winner").css('display','none');
+    // $(".winner").css('display','none');
     currentTurn=1;
     moves =0;
 
@@ -85,10 +91,22 @@ function declareTheWinner(winner){
     $(".refresh").css("display","block");
     $(".winner").css('display','block');
     
-        // $(".winner").html(`<p>${winner}</p>`);
-        swal("Congratulation", winner, "success");
+        $(".winner").text(` Congratulation  ${winner}`);
+        $(".winner").addClass('zoomInUp');
 
-    
-        
+        // swal("Congratulation", winner+' You Win', "success");
+    }
+    function score(winner){
+    if (winner===player1){
+
+        player1Score++;
+        $("#player1").html(player1Score)
+    }
+    else {
+
+        player2Score++;
+        $("#player2").html(player2Score)
+    }
 }
+        
 });
