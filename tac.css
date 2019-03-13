@@ -1,23 +1,18 @@
 *{
     box-sizing: border-box
 }
+
 body{
     background: #11998e;
     background: linear-gradient(to left, rgb(4, 143, 207), #8e119993 );
-    /* background:-webkit-linear-gradient(to right, #38ef7d, #11998e); */
-    /* background-image: url(./birds.jpg) */
 } 
-
 
 .container{
     width: 400px;
     margin: 50px auto;
     overflow: auto;
-/* vertical-align: center; */
-display: block;
-box-align: center;
-
-
+    display: block;
+    box-align: center;
 }
 
 .box{
@@ -29,9 +24,6 @@ box-align: center;
     border: 1px solid whitesmoke;
     font-family: fantasy;
     padding: 24px;
-  
-    
-
 }
 
 .clear{
@@ -46,33 +38,21 @@ box-align: center;
 h1{
     font-size: 56px;
     font-family: fantasy;
-    /* 'Mr Dafoe', cursive; */
     color: whitesmoke ;
     text-align: center;
     
 }
 button{
-align-items: center;
-background-color: rgb(78, 78, 141);
-border: #11998e;
-font-size: 20px; 
-/* color: plum; */
-color: thistle;
-border-radius: 12px;
-/* position: absolute; */
-/* left: 560px; */
-/* bottom: 70px; */
-/* display: inline-block; */
-display: block;
-margin: 10px auto;
-}
+    align-items: center;
+    background-color: rgb(78, 78, 141);
+    border: #11998e;
+    font-size: 20px; 
+    color: thistle;
+    border-radius: 12px;
+    display: block;
+    margin: 10px auto;
+    }
 
-/* h2{
-    color: white;
-    text-align: center;
-    padding: 50px;
-    font-family: fantasy;
-} */
 a:link, a:visited {
     background-color:rgb(78, 78, 141) ;
     color: white;
@@ -82,17 +62,11 @@ a:link, a:visited {
     display: block;
     border-radius: 12px;
     margin: 250px auto;
-   /* position: absolute;
-    right: 580px;
-   bottom: 250px; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
     width: 200px;
     }
 .refresh {
-  /* position: absolute;
-    bottom: 240px;
-  right: 577px; */
     display: block;
     margin: 50px auto;
 }
@@ -101,24 +75,9 @@ a:link, a:visited {
     margin-right: auto;
 }
 
-
-/* .endgame {
-    display: none;
-    width: 225px;
-    margin: -310px auto auto;
-    background-color: rgba(24, 168, 224, .85);
-    padding: 50px;
-    text-align: center;
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-    font-size: 2em;
-} */
-
 #main {
     background-color: rgba(255, 255, 255, .65);
-    /* width: 300px; */
     margin: 15px auto;
-    /* padding: 30px; */
     border-radius: 10px;
 }
 .flex {
@@ -132,8 +91,6 @@ a:link, a:visited {
     font-size: 30px;
     color: antiquewhite;
     padding: 60px;
-    /* background-color: rgb(78, 78, 141); */
-   
 
 }
 .winner{
@@ -143,6 +100,4 @@ a:link, a:visited {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 60px;
     text-align: center;
-    text-decoration-style: wavy
-    /* border-color: black; */
 }

@@ -17,21 +17,21 @@ $(document).ready(function(){
             event.target.style.color ="black";
             currentTurn++;
     $(".winner").text(player2 + "'s Turn")
-
+            
             }
             else
             {   
             event.target.innerHTML= player2;
             event.target.style.color= "white";
             currentTurn--;
-    $(".winner").text(player1 + "'s Turn")
+        $(".winner").text(player1 + "'s Turn")
 
             }
                 if (checkWinner()){  
             let theWinner = currentTurn==1?player2:player1;
                 
             declareTheWinner(theWinner);
-    score(theWinner)
+            score(theWinner)
 
         }
     });
@@ -94,7 +94,6 @@ function declareTheWinner(winner){
         $(".winner").text(` Congratulation  ${winner}`);
         $(".winner").addClass('zoomInUp');
 
-        // swal("Congratulation", winner+' You Win', "success");
     }
     function score(winner){
     if (winner===player1){
