@@ -16,6 +16,7 @@ $(document).ready(function(){
             event.target.innerHTML= player1;
             event.target.style.color ="black";
             currentTurn++;
+            
             $(".winner").text(player2 + "'s Turn")
 
         }
@@ -24,12 +25,13 @@ $(document).ready(function(){
             event.target.innerHTML= player2;
             event.target.style.color= "white";
             currentTurn--;
+            
         $(".winner").text(player1 + "'s Turn")
     }
 
 // check The winner 
 function checkWinner(){
-    if (moves > 4){
+    if (moves > 4 && moves < 9){
     // call a prototype method on array and the slice array to return a subset of our array so it's gonna a new array on the start and end of the index we use ..
     let x = Array.prototype.slice.call($(".box")) ;
     //here we gonna go through the whole array and return just the innerHtml property 
@@ -54,14 +56,22 @@ function checkWinner(){
         return winChance.find(function(chance){
             if (result[chance[0]]!=="" && result[chance[1]]!=="" && result[chance[2]]!=="" && result[chance[0]] === result[chance[1]] && result[chance[1]] === result[chance[2]]){
                 return true ;
-            } else {
-                return false ;
-    }
+            } else{
+                return false ;}
+
+    
     
     })
+        
+        
     
+    } else if(moves === 9 ) {
+        $(".winner").text( "it's Draw")
+    }
+    console.log(moves);
+    // 
     
-    }};
+}
 
         // if checkWinner function return true 
     if (checkWinner()){ 
@@ -84,6 +94,8 @@ function checkWinner(){
 
 
             $(".refresh").css("display","block");
+
+          
     
         }
         // score counter function 
